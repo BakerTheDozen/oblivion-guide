@@ -482,7 +482,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Updated prompt to be more specific and provide better context for the LLM.
             chatHistory.push({ role: "user", parts: [{ text: `You are an expert on The Elder Scrolls IV: Oblivion. Provide a helpful, detailed, and lore-friendly answer to the following player's question about the game. Question: ${prompt}` }] });
             const payload = { contents: chatHistory };
-            const apiKey = ""; 
+            const apiKey = "AIzaSyDpo8AL4siiDMEbNq9eTwgmnZTrAWaf9zQ"; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
             const response = await fetch(apiUrl, {
@@ -559,7 +559,7 @@ document.addEventListener('DOMContentLoaded', () => {
               }
             };
             
-            const apiKey = "";
+            const apiKey = "AIzaSyDpo8AL4siiDMEbNq9eTwgmnZTrAWaf9zQ";
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
             const response = await fetch(apiUrl, {
